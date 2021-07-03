@@ -55,6 +55,9 @@ public class CanPayActivity extends AppCompatActivity {
 
 
     private String isSelected = null;
+
+
+
     private FirebaseDatabase db;
     private DatabaseReference root;
     @Override
@@ -240,6 +243,7 @@ public class CanPayActivity extends AppCompatActivity {
 
         view = layoutInflater.inflate(R.layout.payment_set,null,false);
         userNumber = view.findViewById(R.id.phoneNumberId);
+
         EditText otp = view.findViewById(R.id.otpId);
         payContactNo = userNumber.getText().toString();
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(CanPayActivity.this);

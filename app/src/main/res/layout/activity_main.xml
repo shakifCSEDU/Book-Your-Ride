@@ -27,7 +27,7 @@
             android:id="@+id/toolbarId"
             app:title="Main Page"
             app:titleTextColor="@color/cardview_light_background"
-            android:background="@color/startblue"
+            android:background="#0000ff"
 
             />
 

@@ -40,15 +40,15 @@ public class CustomAdapterGrid extends BaseAdapter {
 
  @Override
  public View getView(int position, View convertView, ViewGroup parent) {
-  if(convertView == null){
-   inflater = LayoutInflater.from(parent.getContext());
-   convertView = inflater.inflate(R.layout.custom_grid,parent,false);
+        if(convertView == null){
+        inflater = LayoutInflater.from(parent.getContext());
+       convertView = inflater.inflate(R.layout.custom_grid,parent,false);
   }
-  CircleImageView imageView = (CircleImageView)convertView.findViewById(R.id.seatImageid);
-  TextView textView = (TextView)convertView.findViewById(R.id.seatTextViewId);
+       CircleImageView imageView = (CircleImageView)convertView.findViewById(R.id.seatImageid);
+        TextView textView = (TextView)convertView.findViewById(R.id.seatTextViewId);
 
-  Picasso.get().load(list.get(position).getSeatImage()).placeholder(R.drawable.seat).into(imageView);
-  textView.setText(list.get(position).getSeatName().toString());
+       Picasso.get().load(list.get(position).getSeatImage()).placeholder(R.drawable.seat).into(imageView);
+       textView.setText(list.get(position).getSeatName().toString());
 
   return convertView;
  }
