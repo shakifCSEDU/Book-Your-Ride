@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.Profile"
-    android:background="@color/white"
+    android:background="#D8F3D9"
     >
 
     <LinearLayout
@@ -21,15 +21,14 @@
                 android:layout_height="300dp"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
-                android:background="@color/endblue">
-
-                <de.hdodenhof.circleimageview.CircleImageView
+                >
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="250dp"
                     android:id="@+id/mainImage"
                     android:src="@drawable/tom"
-                    android:layout_marginTop="5dp"
                     />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
@@ -37,7 +36,7 @@
                     android:id="@+id/fullText"
                     android:textAlignment="center"
                     android:fontFamily="monospace"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:textSize="20sp"
                     android:textStyle="bold"

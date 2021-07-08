@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
+    android:background="#C3C0AA"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,12 +21,13 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/endblue">
-                    <de.hdodenhof.circleimageview.CircleImageView
+                    >
+                    <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/circleImage"
                         android:src="@drawable/tom"
+
                         />
                     <ImageButton
                         android:layout_width="wrap_content"
